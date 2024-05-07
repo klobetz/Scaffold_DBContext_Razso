@@ -1,0 +1,10 @@
+﻿@page "/homekutya"
+@using Microsoft.AspNetCore.Components.QuickGrid
+@inject BlazorApp.Data.KutyamenhelyContext DB
+
+<h3>Kutya Index</h3>
+
+<QuickGrid Class="table" Items="DB.Kutyas">
+    <PropertyColumn Property="kutya=>kutya.Kutyanev"/>
+
+</QuickGrid>
